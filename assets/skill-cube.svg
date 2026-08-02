@@ -1,0 +1,47 @@
+<svg width="340" height="340" viewBox="0 0 340 340" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="topFace" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#67E8F9"/>
+      <stop offset="100%" stop-color="#3B82F6"/>
+    </linearGradient>
+    <linearGradient id="frontFace" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#818CF8"/>
+      <stop offset="100%" stop-color="#4C1D95"/>
+    </linearGradient>
+    <linearGradient id="rightFace" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F472B6"/>
+      <stop offset="100%" stop-color="#BE185D"/>
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <ellipse cx="170.0" cy="325.0" rx="110.00000000000001" ry="18" fill="#000000" opacity="0.35">
+    <animate attributeName="rx" values="110.00000000000001;90.0;110.00000000000001" dur="4s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <g filter="url(#shadow)">
+    <g>
+      <animateTransform attributeName="transform" type="rotate"
+        values="0 170.0 160.0; 8 170.0 160.0; 0 170.0 160.0; -8 170.0 160.0; 0 170.0 160.0"
+        dur="6s" repeatCount="indefinite"/>
+
+      <g>
+        <animateTransform attributeName="transform" type="translate"
+          values="0 0; 0 -14; 0 0" dur="3s" repeatCount="indefinite"/>
+
+        <path d="M 170.0,-40.0 L 343.2,60.0 L 170.0,160.0 L -3.2,60.0 Z" fill="url(#topFace)" stroke="#0D1117" stroke-width="2"/>
+        <path d="M -3.2,260.0 L 170.0,360.0 L 170.0,160.0 L -3.2,60.0 Z" fill="url(#frontFace)" stroke="#0D1117" stroke-width="2"/>
+        <path d="M 170.0,360.0 L 343.2,260.0 L 343.2,60.0 L 170.0,160.0 Z" fill="url(#rightFace)" stroke="#0D1117" stroke-width="2"/>
+
+        <text x="170.0" y="98.0" text-anchor="middle" font-family="Verdana" font-size="13"
+              font-weight="700" fill="#0D1117">React</text>
+        <text x="115.0" y="188.0" text-anchor="middle" font-family="Verdana" font-size="12"
+              font-weight="700" fill="#E5E7EB" transform="rotate(-6 115.0 188.0)">Node.js</text>
+        <text x="232.0" y="165.0" text-anchor="middle" font-family="Verdana" font-size="12"
+              font-weight="700" fill="#FCE7F3" transform="rotate(28 232.0 165.0)">MongoDB</text>
+      </g>
+    </g>
+  </g>
+</svg>
