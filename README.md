@@ -1,4 +1,4 @@
-[README (2).md](https://github.com/user-attachments/files/30633061/README.2.md)
+
 <div align="center">
 
 <img src="assets/hero-banner.svg" width="100%" alt="Sadman Al Islam Shabab — animated dark space hero banner" />
