@@ -1,46 +1,216 @@
-<svg width="340" height="340" viewBox="0 0 340 340" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 500 500" width="420" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" aria-label="Animated glass cube with orbiting particles">
   <defs>
-    <linearGradient id="topFace" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#67E8F9"/>
-      <stop offset="100%" stop-color="#3B82F6"/>
+    <!-- Core gradients -->
+    <linearGradient id="faceTop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#65E8FF" stop-opacity="0.9"/>
+      <stop offset="55%" stop-color="#00C8FF" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#081426" stop-opacity="0.35"/>
     </linearGradient>
-    <linearGradient id="frontFace" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#818CF8"/>
-      <stop offset="100%" stop-color="#4C1D95"/>
+    <linearGradient id="faceRight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E23636" stop-opacity="0.55"/>
+      <stop offset="60%" stop-color="#B11313" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#05070B" stop-opacity="0.55"/>
     </linearGradient>
-    <linearGradient id="rightFace" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#F472B6"/>
-      <stop offset="100%" stop-color="#BE185D"/>
+    <linearGradient id="faceLeft" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#081426" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#05070B" stop-opacity="0.9"/>
     </linearGradient>
-    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
-      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.45"/>
+    <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="35%" stop-color="#65E8FF" stop-opacity="0.55"/>
+      <stop offset="70%" stop-color="#E23636" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#E23636" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="ambientGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00C8FF" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#00C8FF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="orbitStroke" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00C8FF" stop-opacity="0"/>
+      <stop offset="25%" stop-color="#65E8FF" stop-opacity="0.85"/>
+      <stop offset="50%" stop-color="#E23636" stop-opacity="0.6"/>
+      <stop offset="75%" stop-color="#65E8FF" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#00C8FF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="sweepGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="softBlur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6"/>
     </filter>
+    <filter id="strongBlur" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+    <filter id="edgeGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="1.4" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Reusable cube outline for clipping the reflection sweep -->
+    <clipPath id="cubeClip">
+      <path d="M -69.3,-40 L 0,-80 L 69.3,-40 L 69.3,40 L 0,80 L -69.3,40 Z"/>
+    </clipPath>
+
+    <!-- Reusable particle symbol -->
+    <symbol id="particle" viewBox="-4 -4 8 8">
+      <circle r="3" fill="#FFFFFF"/>
+    </symbol>
   </defs>
 
-  <ellipse cx="170.0" cy="325.0" rx="110.00000000000001" ry="18" fill="#000000" opacity="0.35">
-    <animate attributeName="rx" values="110.00000000000001;90.0;110.00000000000001" dur="4s" repeatCount="indefinite"/>
-  </ellipse>
+  <style>
+    .float-group { animation: floaty 10s ease-in-out infinite; transform-box: fill-box; }
+    @keyframes floaty {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-14px); }
+    }
 
-  <g filter="url(#shadow)">
-    <g>
-      <animateTransform attributeName="transform" type="rotate"
-        values="0 170.0 160.0; 8 170.0 160.0; 0 170.0 160.0; -8 170.0 160.0; 0 170.0 160.0"
-        dur="6s" repeatCount="indefinite"/>
+    .cube-group {
+      transform-origin: 250px 230px;
+      animation: cubeSpin 30s linear infinite;
+    }
+    @keyframes cubeSpin {
+      0% { transform: rotate(0deg) scale(1); }
+      50% { transform: rotate(180deg) scale(0.97); }
+      100% { transform: rotate(360deg) scale(1); }
+    }
 
+    .orbit-group {
+      transform-origin: 250px 230px;
+      animation: orbitSpin 13s linear infinite;
+    }
+    @keyframes orbitSpin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    .core {
+      animation: pulse 5s ease-in-out infinite;
+      transform-origin: 250px 230px;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 0.75; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.12); }
+    }
+
+    .sweep {
+      animation: sweepMove 9s ease-in-out infinite;
+      transform-origin: 250px 230px;
+    }
+    @keyframes sweepMove {
+      0% { transform: translateX(-160px); opacity: 0; }
+      10% { opacity: 1; }
+      45% { transform: translateX(160px); opacity: 0; }
+      100% { transform: translateX(160px); opacity: 0; }
+    }
+
+    .web-lines { animation: webBreathe 6s ease-in-out infinite; transform-origin: 250px 230px; }
+    @keyframes webBreathe {
+      0%, 100% { opacity: 0.05; }
+      50% { opacity: 0.12; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .float-group, .cube-group, .orbit-group, .core, .sweep, .web-lines, .p {
+        animation: none !important;
+      }
+    }
+  </style>
+
+  <!-- Ambient background glow, transparent otherwise -->
+  <circle cx="250" cy="230" r="220" fill="url(#ambientGlow)"/>
+
+  <g class="float-group">
+
+    <!-- subtle geometric web pattern behind the cube -->
+    <g class="web-lines" stroke="#65E8FF" stroke-width="1" fill="none">
+      <circle cx="250" cy="230" r="120" opacity="0.5"/>
+      <circle cx="250" cy="230" r="80" opacity="0.4"/>
+      <line x1="250" y1="110" x2="250" y2="350" opacity="0.4"/>
+      <line x1="130" y1="230" x2="370" y2="230" opacity="0.4"/>
+      <line x1="165" y1="145" x2="335" y2="315" opacity="0.4"/>
+      <line x1="335" y1="145" x2="165" y2="315" opacity="0.4"/>
+    </g>
+
+    <!-- Orbit ring with particles -->
+    <g class="orbit-group">
+      <ellipse cx="250" cy="230" rx="185" ry="58" fill="none" stroke="url(#orbitStroke)" stroke-width="1.6" filter="url(#softBlur)" opacity="0.7" transform="rotate(-14 250 230)"/>
+      <ellipse cx="250" cy="230" rx="185" ry="58" fill="none" stroke="url(#orbitStroke)" stroke-width="1" transform="rotate(-14 250 230)"/>
+
+      <!-- Orbiting particles, staggered along the same path -->
       <g>
-        <animateTransform attributeName="transform" type="translate"
-          values="0 0; 0 -14; 0 0" dur="3s" repeatCount="indefinite"/>
+        <use href="#particle" width="8" height="8" fill="#65E8FF">
+          <animateMotion dur="13s" repeatCount="indefinite" rotate="auto"
+            path="M 65,230 A 185,58 -14 1,1 435,230 A 185,58 -14 1,1 65,230"/>
+        </use>
+        <use href="#particle" width="6" height="6" fill="#FFFFFF" opacity="0.9">
+          <animateMotion dur="13s" begin="-1.6s" repeatCount="indefinite" rotate="auto"
+            path="M 65,230 A 185,58 -14 1,1 435,230 A 185,58 -14 1,1 65,230"/>
+        </use>
+        <use href="#particle" width="7" height="7" fill="#E23636" opacity="0.85">
+          <animateMotion dur="13s" begin="-3.2s" repeatCount="indefinite" rotate="auto"
+            path="M 65,230 A 185,58 -14 1,1 435,230 A 185,58 -14 1,1 65,230"/>
+        </use>
+        <use href="#particle" width="5" height="5" fill="#00C8FF" opacity="0.8">
+          <animateMotion dur="13s" begin="-4.8s" repeatCount="indefinite" rotate="auto"
+            path="M 65,230 A 185,58 -14 1,1 435,230 A 185,58 -14 1,1 65,230"/>
+        </use>
+        <use href="#particle" width="6" height="6" fill="#65E8FF" opacity="0.75">
+          <animateMotion dur="13s" begin="-6.4s" repeatCount="indefinite" rotate="auto"
+            path="M 65,230 A 185,58 -14 1,1 435,230 A 185,58 -14 1,1 65,230"/>
+        </use>
+        <use href="#particle" width="4" height="4" fill="#FFFFFF" opacity="0.7">
+          <animateMotion dur="13s" begin="-8s" repeatCount="indefinite" rotate="auto"
+            path="M 65,230 A 185,58 -14 1,1 435,230 A 185,58 -14 1,1 65,230"/>
+        </use>
+        <use href="#particle" width="7" height="7" fill="#B11313" opacity="0.7">
+          <animateMotion dur="13s" begin="-9.6s" repeatCount="indefinite" rotate="auto"
+            path="M 65,230 A 185,58 -14 1,1 435,230 A 185,58 -14 1,1 65,230"/>
+        </use>
+        <use href="#particle" width="5" height="5" fill="#00C8FF" opacity="0.65">
+          <animateMotion dur="13s" begin="-11.2s" repeatCount="indefinite" rotate="auto"
+            path="M 65,230 A 185,58 -14 1,1 435,230 A 185,58 -14 1,1 65,230"/>
+        </use>
+      </g>
+    </g>
 
-        <path d="M 170.0,-40.0 L 343.2,60.0 L 170.0,160.0 L -3.2,60.0 Z" fill="url(#topFace)" stroke="#0D1117" stroke-width="2"/>
-        <path d="M -3.2,260.0 L 170.0,360.0 L 170.0,160.0 L -3.2,60.0 Z" fill="url(#frontFace)" stroke="#0D1117" stroke-width="2"/>
-        <path d="M 170.0,360.0 L 343.2,260.0 L 343.2,60.0 L 170.0,160.0 Z" fill="url(#rightFace)" stroke="#0D1117" stroke-width="2"/>
+    <!-- floating shadow beneath the cube -->
+    <ellipse cx="250" cy="345" rx="70" ry="12" fill="#05070B" opacity="0.5" filter="url(#strongBlur)"/>
 
-        <text x="170.0" y="98.0" text-anchor="middle" font-family="Verdana" font-size="13"
-              font-weight="700" fill="#0D1117">React</text>
-        <text x="115.0" y="188.0" text-anchor="middle" font-family="Verdana" font-size="12"
-              font-weight="700" fill="#E5E7EB" transform="rotate(-6 115.0 188.0)">Node.js</text>
-        <text x="232.0" y="165.0" text-anchor="middle" font-family="Verdana" font-size="12"
-              font-weight="700" fill="#FCE7F3" transform="rotate(28 232.0 165.0)">MongoDB</text>
+    <!-- The glass cube -->
+    <g class="cube-group">
+      <g transform="translate(250 230)">
+        <!-- outer bloom -->
+        <circle r="110" fill="url(#coreGlow)" opacity="0.35" filter="url(#strongBlur)"/>
+
+        <!-- three visible faces -->
+        <path d="M -69.3,-40 L 0,-80 L 69.3,-40 L 0,0 Z" fill="url(#faceTop)" filter="url(#edgeGlow)"/>
+        <path d="M 69.3,-40 L 69.3,40 L 0,80 L 0,0 Z" fill="url(#faceRight)" filter="url(#edgeGlow)"/>
+        <path d="M -69.3,-40 L 0,0 L 0,80 L -69.3,40 Z" fill="url(#faceLeft)" filter="url(#edgeGlow)"/>
+
+        <!-- metallic edges -->
+        <g fill="none" stroke="#FFFFFF" stroke-width="0.8" stroke-linejoin="round" opacity="0.55">
+          <path d="M -69.3,-40 L 0,-80 L 69.3,-40 L 69.3,40 L 0,80 L -69.3,40 Z"/>
+          <path d="M -69.3,-40 L 0,0 L 69.3,-40"/>
+          <path d="M 0,0 L 0,80"/>
+        </g>
+        <g fill="none" stroke="#65E8FF" stroke-width="0.6" opacity="0.5">
+          <path d="M -69.3,-40 L 0,-80 L 69.3,-40 L 69.3,40 L 0,80 L -69.3,40 Z"/>
+        </g>
+
+        <!-- reflection sweep, clipped to the cube silhouette -->
+        <g class="sweep" clip-path="url(#cubeClip)">
+          <rect x="-90" y="-90" width="60" height="180" fill="url(#sweepGrad)" transform="rotate(20)"/>
+        </g>
+
+        <!-- inner glowing core -->
+        <circle class="core" r="16" fill="url(#coreGlow)" filter="url(#softBlur)"/>
       </g>
     </g>
   </g>
