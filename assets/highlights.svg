@@ -1,0 +1,89 @@
+<svg viewBox="0 0 1500 280" width="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Highlights and achievements: contest results and certifications">
+  <defs>
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#65E8FF"/>
+      <stop offset="55%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#EF4444"/>
+    </linearGradient>
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00C8FF" stop-opacity="0"/>
+      <stop offset="12%" stop-color="#65E8FF" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#3B82F6" stop-opacity="0.35"/>
+      <stop offset="88%" stop-color="#EF4444" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#EF4444" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="badgeGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00C8FF" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#00C8FF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="panelFill" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0C1D33" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#05070B" stop-opacity="0.7"/>
+    </linearGradient>
+    <linearGradient id="panelBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#65E8FF" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#EF4444" stop-opacity="0.25"/>
+    </linearGradient>
+    <filter id="glowSoft" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="5"/>
+    </filter>
+    <filter id="glowStrong" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="16"/>
+    </filter>
+
+  </defs>
+  <style>
+    .card { animation: cardIn 0.7s cubic-bezier(.2,.8,.2,1); }
+    @keyframes cardIn { from { opacity:0; transform: translateY(14px) scale(0.98);} to { opacity:1; transform: translateY(0) scale(1);} }
+    .card:hover { }
+    @media (prefers-reduced-motion: reduce) { .card { animation:none !important; } }
+  </style>
+
+  <text x="24" y="34" font-family="'Segoe UI',system-ui,sans-serif" font-size="13" font-weight="700" letter-spacing="3" fill="#7D93A6">CONTEST RESULTS &amp; CERTIFICATIONS</text>
+
+  
+      <g class="card" style="animation-delay:0.15s" transform="translate(24.0 74)">
+        <rect width="345.0" height="190" rx="16" fill="url(#panelFill)" stroke="url(#panelBorder)" stroke-width="1.2"/>
+        <circle cx="315.0" cy="30" r="46" fill="#F2CB5C" opacity="0.10" filter="url(#glowStrong)"/>
+        <text x="20" y="46" font-size="30" font-family="system-ui,sans-serif">🥇</text>
+        <text x="20" y="98.8" font-family="'Segoe UI',system-ui,sans-serif" font-size="11" font-weight="700" letter-spacing="2" fill="#F2CB5C">FINALIST</text>
+        <text x="20" y="120.8" font-family="'Segoe UI',system-ui,sans-serif" font-size="14.5" fill="#E5E7EB">
+          <tspan x="20" dy="0">DIU Takeoff Programming</tspan>
+          <tspan x="20" dy="18">Contest</tspan>
+        </text>
+        <rect x="18" y="150" width="128" height="24" rx="12" fill="#F2CB5C" opacity="0.15" stroke="#F2CB5C" stroke-width="1"/><text x="82.0" y="167" text-anchor="middle" font-family="Segoe UI, system-ui, sans-serif" font-size="11" font-weight="700" fill="#F2CB5C">Top 10</text>
+      </g>
+      <g class="card" style="animation-delay:0.27s" transform="translate(393.0 74)">
+        <rect width="345.0" height="190" rx="16" fill="url(#panelFill)" stroke="url(#panelBorder)" stroke-width="1.2"/>
+        <circle cx="315.0" cy="30" r="46" fill="#9C8CF0" opacity="0.10" filter="url(#glowStrong)"/>
+        <text x="20" y="46" font-size="30" font-family="system-ui,sans-serif">🥈</text>
+        <text x="20" y="98.8" font-family="'Segoe UI',system-ui,sans-serif" font-size="11" font-weight="700" letter-spacing="2" fill="#9C8CF0">FINALIST</text>
+        <text x="20" y="120.8" font-family="'Segoe UI',system-ui,sans-serif" font-size="14.5" fill="#E5E7EB">
+          <tspan x="20" dy="0">DIU Unlock The Algorithm</tspan>
+          <tspan x="20" dy="18">Contest</tspan>
+        </text>
+        <rect x="18" y="150" width="128" height="24" rx="12" fill="#9C8CF0" opacity="0.15" stroke="#9C8CF0" stroke-width="1"/><text x="82.0" y="167" text-anchor="middle" font-family="Segoe UI, system-ui, sans-serif" font-size="11" font-weight="700" fill="#9C8CF0">Top 20</text>
+      </g>
+      <g class="card" style="animation-delay:0.39s" transform="translate(762.0 74)">
+        <rect width="345.0" height="190" rx="16" fill="url(#panelFill)" stroke="url(#panelBorder)" stroke-width="1.2"/>
+        <circle cx="315.0" cy="30" r="46" fill="#65E8FF" opacity="0.10" filter="url(#glowStrong)"/>
+        <text x="20" y="46" font-size="30" font-family="system-ui,sans-serif">🎨</text>
+        <text x="20" y="98.8" font-family="'Segoe UI',system-ui,sans-serif" font-size="11" font-weight="700" letter-spacing="2" fill="#65E8FF">CERTIFIED</text>
+        <text x="20" y="120.8" font-family="'Segoe UI',system-ui,sans-serif" font-size="14.5" fill="#E5E7EB">
+          <tspan x="20" dy="0">UI/UX Design Workshop &amp;</tspan>
+          <tspan x="20" dy="18">Training</tspan>
+        </text>
+        
+      </g>
+      <g class="card" style="animation-delay:0.51s" transform="translate(1131.0 74)">
+        <rect width="345.0" height="190" rx="16" fill="url(#panelFill)" stroke="url(#panelBorder)" stroke-width="1.2"/>
+        <circle cx="315.0" cy="30" r="46" fill="#EF4444" opacity="0.10" filter="url(#glowStrong)"/>
+        <text x="20" y="46" font-size="30" font-family="system-ui,sans-serif">💻</text>
+        <text x="20" y="98.8" font-family="'Segoe UI',system-ui,sans-serif" font-size="11" font-weight="700" letter-spacing="2" fill="#EF4444">CERTIFIED</text>
+        <text x="20" y="120.8" font-family="'Segoe UI',system-ui,sans-serif" font-size="14.5" fill="#E5E7EB">
+          <tspan x="20" dy="0">Technology &amp; Programming</tspan>
+          <tspan x="20" dy="18">Workshops</tspan>
+        </text>
+        
+      </g>
+</svg>
