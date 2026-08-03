@@ -1,0 +1,57 @@
+<svg viewBox="0 0 500 300" width="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="HostelMania project card">
+  <defs>
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#65E8FF"/>
+      <stop offset="55%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#EF4444"/>
+    </linearGradient>
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00C8FF" stop-opacity="0"/>
+      <stop offset="12%" stop-color="#65E8FF" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#3B82F6" stop-opacity="0.35"/>
+      <stop offset="88%" stop-color="#EF4444" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#EF4444" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="badgeGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00C8FF" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#00C8FF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="panelFill" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0C1D33" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#05070B" stop-opacity="0.7"/>
+    </linearGradient>
+    <linearGradient id="panelBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#65E8FF" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#EF4444" stop-opacity="0.25"/>
+    </linearGradient>
+    <filter id="glowSoft" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="5"/>
+    </filter>
+    <filter id="glowStrong" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="16"/>
+    </filter>
+
+  </defs>
+  <style>
+    .glow { animation: glowPulse 4.5s ease-in-out infinite; transform-origin: 430px 60px; }
+    @keyframes glowPulse { 0%,100% { opacity:0.5; } 50% { opacity:0.9; } }
+    .arrow { animation: nudge 2.2s ease-in-out infinite; }
+    @keyframes nudge { 0%,100% { transform: translateX(0); } 50% { transform: translateX(4px); } }
+    @media (prefers-reduced-motion: reduce) { .glow, .arrow { animation:none !important; } }
+  </style>
+
+  <rect x="1" y="1" width="498" height="298" rx="18" fill="url(#panelFill)" stroke="url(#panelBorder)" stroke-width="1.3"/>
+  <circle class="glow" cx="430" cy="60" r="80" fill="url(#badgeGlow)" filter="url(#glowStrong)"/>
+
+  <text x="28" y="58" font-size="34" font-family="system-ui,sans-serif">🍔</text>
+  <text x="28" y="98" font-family="'Segoe UI',system-ui,sans-serif" font-size="21" font-weight="800" fill="url(#titleGrad)">HostelMania</text>
+
+  <text x="28" y="128" font-family="'Segoe UI',system-ui,sans-serif" font-size="13" fill="#AEC3D4"><tspan x="28" dy="0">Full-stack hostel food management</tspan><tspan x="28" dy="19">system — auth, role-based access,</tspan><tspan x="28" dy="19">ordering flow &amp; Stripe payments.</tspan></text>
+
+  <rect x="28" y="236" width="55" height="24" rx="12" fill="#0C1D33" stroke="#1B3350" stroke-width="1"/><text x="55.5" y="253" text-anchor="middle" font-family="'Segoe UI',system-ui,sans-serif" font-size="11" fill="#9CC7DE">PHP</text><rect x="91" y="236" width="77" height="24" rx="12" fill="#0C1D33" stroke="#1B3350" stroke-width="1"/><text x="129.5" y="253" text-anchor="middle" font-family="'Segoe UI',system-ui,sans-serif" font-size="11" fill="#9CC7DE">MySQL</text><rect x="176" y="236" width="132" height="24" rx="12" fill="#0C1D33" stroke="#1B3350" stroke-width="1"/><text x="242.0" y="253" text-anchor="middle" font-family="'Segoe UI',system-ui,sans-serif" font-size="11" fill="#9CC7DE">JavaScript</text><rect x="316" y="236" width="66" height="24" rx="12" fill="#0C1D33" stroke="#1B3350" stroke-width="1"/><text x="349.0" y="253" text-anchor="middle" font-family="'Segoe UI',system-ui,sans-serif" font-size="11" fill="#9CC7DE">HTML</text><rect x="390" y="236" width="55" height="24" rx="12" fill="#0C1D33" stroke="#1B3350" stroke-width="1"/><text x="417.5" y="253" text-anchor="middle" font-family="'Segoe UI',system-ui,sans-serif" font-size="11" fill="#9CC7DE">CSS</text>
+
+  <line x1="28" y1="268" x2="472" y2="268" stroke="#132842" stroke-width="1"/>
+  <g class="arrow">
+    <text x="28" y="288" font-family="'Segoe UI',system-ui,sans-serif" font-size="13" font-weight="700" fill="#65E8FF">View repository &#8594;</text>
+  </g>
+</svg>
