@@ -1,7 +1,6 @@
-
 <div align="center">
 
-<img src="assets/hero-banner.svg" width="100%" alt="Sadman Al Islam Shabab — animated dark space hero banner" />
+<img src="assets/hero-banner.svg" width="100%" alt="Md. Sadman Al Islam Shabab — animated dark space hero banner" />
 
 <br/>
 
@@ -19,40 +18,26 @@
 
 <br/>
 
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=transparent&height=2&color=0:081426,50:00C8FF,100:081426" width="100%"/>
-</div>
-
-## 🧑‍💻 01 &nbsp;/&nbsp; About Me
+<img src="assets/section-about.svg" width="100%" alt="About Me" />
 
 <table>
 <tr>
 <td width="62%" valign="top">
 
-- 🎓 **B.Sc. in CSE** — Daffodil International University *(2023 – 2026)*
-- 💼 Building **HostelMania** — a full-stack hostel food platform with auth, role-based access & Stripe payments
-- 🌱 Currently sharpening **AI integration** & **cloud deployment** skills
-- 🏆 **Executive Member**, Computer & Programming Club — helped run Typetrek, Takeoff, UTA & more
-- 🤝 Volunteered at the **Bangladesh Olympiad in Informatics (BdOI)**
-- 📍 Based in Mirpur, Dhaka, Bangladesh
-- ⚡ Fun fact: I turn coffee, bugs, and deadlines into deployed apps
+<img src="assets/about-panel.svg" width="100%" alt="Quick facts about Sadman" />
 
 </td>
 <td width="38%" valign="top" align="center">
 
-<img src="assets/skill-cube.svg" width="220" alt="Animated 3D glass skill cube" />
-
-<sub>always compiling, never sleeping</sub>
+<img src="assets/skill-cube.svg" width="230" alt="Animated 3D glass skill cube" />
 
 </td>
 </tr>
 </table>
 
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=transparent&height=2&color=0:081426,50:00C8FF,100:081426" width="100%"/>
-</div>
+<br/>
 
-## 🛠️ 02 &nbsp;/&nbsp; Tech Stack
+<img src="assets/section-stack.svg" width="100%" alt="Tech Stack" />
 
 <table width="100%">
 <tr>
@@ -74,11 +59,9 @@
 </tr>
 </table>
 
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=transparent&height=2&color=0:081426,50:00C8FF,100:081426" width="100%"/>
-</div>
+<br/>
 
-## 📊 03 &nbsp;/&nbsp; GitHub Stats
+<img src="assets/section-stats.svg" width="100%" alt="GitHub Stats" />
 
 <div align="center">
 
@@ -91,98 +74,57 @@
 </td>
 <td valign="top" width="50%">
 
-<img src="assets/languages-chart.svg" width="100%" alt="Primary languages and tools distribution chart"/>
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=sabab2808&theme=tokyonight&hide_border=true&background=00000000&ring=00C8FF&fire=EF4444&currStreakLabel=65E8FF" width="100%"/>
 
 </td>
 </tr>
 </table>
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=sabab2808&theme=tokyonight&hide_border=true&background=00000000&ring=00C8FF&fire=EF4444&currStreakLabel=65E8FF" />
+<br/>
+
+<img src="assets/languages-chart.svg" width="100%" alt="Primary languages and tools, by project footprint" />
 
 <br/><br/>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=sabab2808&theme=tokyo-night&hide_border=true&bg_color=00000000&area=true&line=00C8FF&color=E5E7EB" width="95%"/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=sabab2808&theme=tokyo-night&hide_border=true&bg_color=00000000&area=true&line=00C8FF&color=E5E7EB" width="100%"/>
 
 </div>
 
-> 💡 If a card looks blank on first load, refresh once — they render live and occasionally need a moment to warm up.
+> 💡 The two cards above are live and pulled from `github-readme-stats.vercel.app` / `herokuapp.com` — if either looks blank on first load, refresh once; free-tier serverless functions occasionally need a moment to spin up. Everything else on this page is a self-hosted SVG, so it always renders.
 
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=transparent&height=2&color=0:081426,50:00C8FF,100:081426" width="100%"/>
-</div>
+<br/>
 
-## 🏆 04 &nbsp;/&nbsp; GitHub Trophies
+<img src="assets/section-highlights.svg" width="100%" alt="Highlights and Achievements" />
 
-<div align="center">
-<img src="https://github-profile-trophy.vercel.app/?username=sabab2808&theme=radical&no-frame=true&row=1&column=7&margin-w=10" />
-</div>
+<img src="assets/highlights.svg" width="100%" alt="Contest results and certifications" />
 
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=transparent&height=2&color=0:081426,50:00C8FF,100:081426" width="100%"/>
-</div>
+<br/>
 
-## 🚀 05 &nbsp;/&nbsp; Featured Projects
+<img src="assets/section-projects.svg" width="100%" alt="Featured Projects" />
 
 <table width="100%">
 <tr>
 <td width="33%" valign="top">
-
 <a href="https://github.com/sabab2808/HostelMania2.0">
-<img width="100%" src="https://github-readme-stats.vercel.app/api/pin/?username=sabab2808&repo=HostelMania2.0&theme=tokyonight&hide_border=true&bg_color=00000000&title_color=65E8FF&text_color=E5E7EB" />
+<img width="100%" src="assets/project-hostelmania.svg" alt="HostelMania project card" />
 </a>
-
-**🍔 HostelMania**
-Full-stack hostel food management system: auth, role-based access, ordering flow & Stripe payments.
-`PHP` `MySQL` `JavaScript` `HTML` `CSS`
-
 </td>
 <td width="33%" valign="top">
-
 <a href="https://github.com/sabab2808/Computer-Graphics-Project">
-<img width="100%" src="https://github-readme-stats.vercel.app/api/pin/?username=sabab2808&repo=Computer-Graphics-Project&theme=tokyonight&hide_border=true&bg_color=00000000&title_color=65E8FF&text_color=E5E7EB" />
+<img width="100%" src="assets/project-graphics.svg" alt="Computer Graphics Project card" />
 </a>
-
-**🎮 Computer Graphics Project**
-2D space shooting game with real-time rendering & collision detection.
-`C++` `OpenGL` `GLUT`
-
 </td>
 <td width="33%" valign="top">
-
-<a href="https://github.com/sabab2808/My-Portfolio">
-<img width="100%" src="https://github-readme-stats.vercel.app/api/pin/?username=sabab2808&repo=My-Portfolio&theme=tokyonight&hide_border=true&bg_color=00000000&title_color=65E8FF&text_color=E5E7EB" />
+<a href="https://my-portfolio-amber-theta-80.vercel.app">
+<img width="100%" src="assets/project-portfolio.svg" alt="My Portfolio project card" />
 </a>
-
-**🌐 My Portfolio**
-Personal portfolio showcasing projects, skills, and achievements. [Live ↗](https://my-portfolio-amber-theta-80.vercel.app)
-`HTML` `CSS` `JavaScript`
-
 </td>
 </tr>
 </table>
 
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=transparent&height=2&color=0:081426,50:00C8FF,100:081426" width="100%"/>
-</div>
+<br/>
 
-## 🎖️ 06 &nbsp;/&nbsp; Achievements
-
-<div align="center">
-
-| Achievement | Detail |
-|:---:|:---|
-| 🥇 Finalist | DIU Takeoff Programming Contest (Top 10) |
-| 🥈 Finalist | DIU Unlock The Algorithm Contest (Top 20) |
-| 🎨 Certified | UI/UX Design Workshop & Training |
-| 💻 Certified | Technology & Programming Workshops |
-
-</div>
-
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=transparent&height=2&color=0:081426,50:00C8FF,100:081426" width="100%"/>
-</div>
-
-## 🤝 07 &nbsp;/&nbsp; Connect With Me
+<img src="assets/section-connect.svg" width="100%" alt="Connect With Me" />
 
 <div align="center">
 
