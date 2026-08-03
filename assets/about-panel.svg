@@ -1,0 +1,100 @@
+<svg viewBox="0 0 900 448" width="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="About me summary panel">
+  <defs>
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#65E8FF"/>
+      <stop offset="55%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#EF4444"/>
+    </linearGradient>
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00C8FF" stop-opacity="0"/>
+      <stop offset="12%" stop-color="#65E8FF" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#3B82F6" stop-opacity="0.35"/>
+      <stop offset="88%" stop-color="#EF4444" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#EF4444" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="badgeGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00C8FF" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#00C8FF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="panelFill" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0C1D33" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#05070B" stop-opacity="0.7"/>
+    </linearGradient>
+    <linearGradient id="panelBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#65E8FF" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#EF4444" stop-opacity="0.25"/>
+    </linearGradient>
+    <filter id="glowSoft" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="5"/>
+    </filter>
+    <filter id="glowStrong" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="16"/>
+    </filter>
+
+  </defs>
+  <style>
+    .row { animation: rowIn 0.7s ease-out; }
+    @keyframes rowIn { from { opacity:0; transform: translateX(-10px);} to { opacity:1; transform: translateX(0);} }
+    .corner { animation: cornerPulse 5s ease-in-out infinite; }
+    @keyframes cornerPulse { 0%,100% { opacity:0.25; } 50% { opacity:0.55; } }
+    @media (prefers-reduced-motion: reduce) { .row, .corner { animation:none !important; } }
+  </style>
+
+  <rect x="1" y="1" width="898" height="446" rx="20" fill="url(#panelFill)" stroke="url(#panelBorder)" stroke-width="1.3"/>
+  <circle class="corner" cx="860" cy="40" r="70" fill="url(#badgeGlow)" filter="url(#glowStrong)"/>
+
+  <text x="30" y="42" font-family="'Segoe UI',system-ui,sans-serif" font-size="12" font-weight="700" letter-spacing="3" fill="#7D93A6">QUICK FACTS</text>
+  <text x="30" y="64" font-family="'Segoe UI',system-ui,sans-serif" font-size="19" font-weight="700" fill="url(#titleGrad)">Sadman, at a glance</text>
+
+  
+      <g class="row" style="animation-delay:0.15s">
+        <rect x="30" y="78" width="44" height="44" rx="12" fill="url(#panelFill)" stroke="url(#panelBorder)" stroke-width="1"/>
+        <text x="52" y="107" text-anchor="middle" font-size="19" font-family="system-ui,sans-serif">🎓</text>
+        <text x="86" y="96" font-family="'Segoe UI',system-ui,sans-serif" font-size="10.5" font-weight="700" letter-spacing="2" fill="#65E8FF" opacity="0.85">EDUCATION</text>
+        <text x="86" y="113" font-family="'Segoe UI',system-ui,sans-serif" font-size="14.5" fill="#E5E7EB">B.Sc. in CSE — Daffodil International University</text>
+        <text x="86" y="116" font-family="'Segoe UI',system-ui,sans-serif" font-size="12" fill="#5C7A94">2023 &#8211; 2026</text>
+        <line x1="30" y1="128" x2="870" y2="128" stroke="#0F2036" stroke-width="1"/>
+      </g>
+      <g class="row" style="animation-delay:0.24s">
+        <rect x="30" y="134" width="44" height="44" rx="12" fill="url(#panelFill)" stroke="url(#panelBorder)" stroke-width="1"/>
+        <text x="52" y="163" text-anchor="middle" font-size="19" font-family="system-ui,sans-serif">💼</text>
+        <text x="86" y="152" font-family="'Segoe UI',system-ui,sans-serif" font-size="10.5" font-weight="700" letter-spacing="2" fill="#65E8FF" opacity="0.85">BUILDING</text>
+        <text x="86" y="169" font-family="'Segoe UI',system-ui,sans-serif" font-size="14.5" fill="#E5E7EB">HostelMania — full-stack hostel food platform</text>
+        <text x="86" y="172" font-family="'Segoe UI',system-ui,sans-serif" font-size="12" fill="#5C7A94">auth &#8226; role-based access &#8226; Stripe payments</text>
+        <line x1="30" y1="184" x2="870" y2="184" stroke="#0F2036" stroke-width="1"/>
+      </g>
+      <g class="row" style="animation-delay:0.33s">
+        <rect x="30" y="190" width="44" height="44" rx="12" fill="url(#panelFill)" stroke="url(#panelBorder)" stroke-width="1"/>
+        <text x="52" y="219" text-anchor="middle" font-size="19" font-family="system-ui,sans-serif">🌱</text>
+        <text x="86" y="208" font-family="'Segoe UI',system-ui,sans-serif" font-size="10.5" font-weight="700" letter-spacing="2" fill="#65E8FF" opacity="0.85">LEARNING</text>
+        <text x="86" y="225" font-family="'Segoe UI',system-ui,sans-serif" font-size="14.5" fill="#E5E7EB">AI integration &amp; cloud deployment</text>
+        <text x="86" y="228" font-family="'Segoe UI',system-ui,sans-serif" font-size="12" fill="#5C7A94">sharpening these right now</text>
+        <line x1="30" y1="240" x2="870" y2="240" stroke="#0F2036" stroke-width="1"/>
+      </g>
+      <g class="row" style="animation-delay:0.42s">
+        <rect x="30" y="246" width="44" height="44" rx="12" fill="url(#panelFill)" stroke="url(#panelBorder)" stroke-width="1"/>
+        <text x="52" y="275" text-anchor="middle" font-size="19" font-family="system-ui,sans-serif">🏆</text>
+        <text x="86" y="264" font-family="'Segoe UI',system-ui,sans-serif" font-size="10.5" font-weight="700" letter-spacing="2" fill="#65E8FF" opacity="0.85">ROLE</text>
+        <text x="86" y="281" font-family="'Segoe UI',system-ui,sans-serif" font-size="14.5" fill="#E5E7EB">Executive Member, Computer &amp; Programming Club</text>
+        <text x="86" y="284" font-family="'Segoe UI',system-ui,sans-serif" font-size="12" fill="#5C7A94">Typetrek &#8226; Takeoff &#8226; UTA &amp; more</text>
+        <line x1="30" y1="296" x2="870" y2="296" stroke="#0F2036" stroke-width="1"/>
+      </g>
+      <g class="row" style="animation-delay:0.51s">
+        <rect x="30" y="302" width="44" height="44" rx="12" fill="url(#panelFill)" stroke="url(#panelBorder)" stroke-width="1"/>
+        <text x="52" y="331" text-anchor="middle" font-size="19" font-family="system-ui,sans-serif">🤝</text>
+        <text x="86" y="320" font-family="'Segoe UI',system-ui,sans-serif" font-size="10.5" font-weight="700" letter-spacing="2" fill="#65E8FF" opacity="0.85">VOLUNTEER</text>
+        <text x="86" y="337" font-family="'Segoe UI',system-ui,sans-serif" font-size="14.5" fill="#E5E7EB">Bangladesh Olympiad in Informatics (BdOI)</text>
+        <text x="86" y="340" font-family="'Segoe UI',system-ui,sans-serif" font-size="12" fill="#5C7A94">on-ground volunteer</text>
+        <line x1="30" y1="352" x2="870" y2="352" stroke="#0F2036" stroke-width="1"/>
+      </g>
+      <g class="row" style="animation-delay:0.6s">
+        <rect x="30" y="358" width="44" height="44" rx="12" fill="url(#panelFill)" stroke="url(#panelBorder)" stroke-width="1"/>
+        <text x="52" y="387" text-anchor="middle" font-size="19" font-family="system-ui,sans-serif">📍</text>
+        <text x="86" y="376" font-family="'Segoe UI',system-ui,sans-serif" font-size="10.5" font-weight="700" letter-spacing="2" fill="#65E8FF" opacity="0.85">LOCATION</text>
+        <text x="86" y="390" font-family="'Segoe UI',system-ui,sans-serif" font-size="14.5" fill="#E5E7EB">Mirpur, Dhaka, Bangladesh</text>
+        
+        
+      </g>
+
+  <text x="30" y="432" font-family="'Segoe UI',system-ui,sans-serif" font-size="12" fill="#5C7A94" font-style="italic">&#9889; Fun fact &#8212; I turn coffee, bugs, and deadlines into deployed apps.</text>
+</svg>
