@@ -171,7 +171,7 @@
     </g>
 
     <!-- name + subtitle -->
-    <text x="750" y="158" text-anchor="middle" font-family="'Segoe UI', 'Fira Code', system-ui, sans-serif" font-size="54" font-weight="700" letter-spacing="3" fill="url(#nameGrad)">MD. SADMAN AL ISLAM SHABAB</text>
+    <text x="750" y="158" text-anchor="middle" font-family="'Segoe UI', 'Fira Code', system-ui, sans-serif" font-size="54" font-weight="700" letter-spacing="3" fill="url(#nameGrad)">SADMAN AL ISLAM SHABAB</text>
 
     <rect class="underline" x="590" y="182" width="320" height="2.5" fill="url(#underlineGrad)"/>
 
