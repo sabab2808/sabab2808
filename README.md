@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/hero-banner.svg" width="100%" alt="Md. Sadman Al Islam Shabab — animated dark space hero banner" />
+<img src="assets/hero-banner.svg" width="100%" alt="Sadman Al Islam Shabab — animated dark space hero banner" />
 
 <br/>
 
@@ -20,20 +20,13 @@
 
 <img src="assets/section-about.svg" width="100%" alt="About Me" />
 
-<table>
-<tr>
-<td width="62%" valign="top">
-
 <img src="assets/about-panel.svg" width="100%" alt="Quick facts about Sadman" />
 
-</td>
-<td width="38%" valign="top" align="center">
+<br/>
 
-<img src="assets/skill-cube.svg" width="230" alt="Animated 3D glass skill cube" />
-
-</td>
-</tr>
-</table>
+<div align="center">
+<img src="assets/skill-cube.svg" width="280" alt="Animated 3D glass skill cube" />
+</div>
 
 <br/>
 
