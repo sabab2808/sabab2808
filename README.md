@@ -58,22 +58,13 @@
 
 <div align="center">
 
-<table>
-<tr>
-<td valign="top" width="50%">
+<img src="https://github-readme-stats.vercel.app/api?username=sabab2808&show_icons=true&theme=tokyonight&hide_border=true&bg_color=00000000&title_color=65E8FF&icon_color=EF4444&text_color=E5E7EB&text_bold=true&cache_seconds=86400" width="100%"/>
 
-<img src="https://github-readme-stats.vercel.app/api?username=sabab2808&show_icons=true&theme=tokyonight&hide_border=true&bg_color=00000000&title_color=65E8FF&icon_color=EF4444&text_color=E5E7EB&cache_seconds=1800" width="100%"/>
-
-</td>
-<td valign="top" width="50%">
+<br/><br/>
 
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=sabab2808&theme=tokyonight&hide_border=true&background=00000000&ring=00C8FF&fire=EF4444&currStreakLabel=65E8FF" width="100%"/>
 
-</td>
-</tr>
-</table>
-
-<br/>
+<br/><br/>
 
 <img src="assets/languages-chart.svg" width="100%" alt="Primary languages and tools, by project footprint" />
 
@@ -83,7 +74,7 @@
 
 </div>
 
-> 💡 The two cards above are live and pulled from `github-readme-stats.vercel.app` / `herokuapp.com` — if either looks blank on first load, refresh once; free-tier serverless functions occasionally need a moment to spin up. Everything else on this page is a self-hosted SVG, so it always renders.
+> 💡 The GitHub stats and streak cards above are live, pulled from `github-readme-stats.vercel.app` / `herokuapp.com`. If a card looks blank, that's the free shared instance hitting its rate limit — it recovers on its own, usually within a few hours. Everything else on this page is a self-hosted SVG and always renders.
 
 <br/>
 
